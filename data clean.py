@@ -13,59 +13,23 @@ wifi = list(info[1:,20])
 price_category = list(info[1:,21])
 all_att = blue + dual_sim + four_g + three_g + touch_screen + wifi + price_category
 
-categories = []
-for i in all_att:
-    if i not in categories:
-        categories.append(i)
 
-new_blue = []
-for i in blue:
-    if i in ["yes", "has", "Yes", "Has", "YES", "1"]:
-        new_blue.append("Yes")
-    else:
-        new_blue.append("No")
+def change_attribute(data):
+    new_att = []
+    for i in data:
+        if i in ["yes", "has", "Yes", "Has", "YES", "1"]:
+            new_att.append("Yes")
+        else:
+            new_att.append("No")
+    return(new_att)
 
-new_dual_sim = []
-for i in dual_sim:
-    if i in ["yes", "has", "Yes", "Has", "YES", "1"]:
-        new_dual_sim.append("Yes")
-    else:
-        new_dual_sim.append("No")
-
-new_four_g = []
-for i in four_g:
-    if i in ["yes", "has", "Yes", "Has", "YES", "1"]:
-        new_four_g.append("Yes")
-    else:
-        new_four_g.append("No")
-
-new_three_g = []
-for i in three_g:
-    if i in ["yes", "has", "Yes", "Has", "YES", "1"]:
-        new_three_g.append("Yes")
-    else:
-        new_three_g.append("No")
-
-new_touch_screen = []
-for i in touch_screen:
-    if i in ["yes", "has", "Yes", "Has", "YES", "1"]:
-        new_touch_screen.append("Yes")
-    else:
-        new_touch_screen.append("No")
-
-new_wifi = []
-for i in wifi:
-    if i in ["yes", "has", "Yes", "Has", "YES", "1"]:
-        new_wifi.append("Yes")
-    else:
-        new_wifi.append("No")
-
-new_price_category = []
-for i in price_category:
-    if i in ["yes", "has", "Yes", "Has", "YES", "1"]:
-        new_price_category.append("Yes")
-    else:
-        new_price_category.append("No")
+new_blue = change_attribute(blue)
+new_dual_sim = change_attribute(dual_sim)
+new_four_g = change_attribute(four_g)
+new_three_g = change_attribute(three_g)
+new_touch_screen = change_attribute(touch_screen)
+new_wifi = change_attribute(wifi)
+new_price_category = change_attribute(price_category)
 
 info[1:,2] = new_blue
 info[1:,4] = new_dual_sim
