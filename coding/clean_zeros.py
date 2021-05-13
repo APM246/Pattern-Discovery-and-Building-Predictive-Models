@@ -8,6 +8,21 @@ primary_camera = info[1:,11]
 pixel_height = info[1:,12]
 screen_width = info[1:,16]
 
+columns = info[1]
+
+def check_zeros(columns)
+    zeros = []
+    for i in range(len(columns)):
+        column = info[:,i]
+        name = info[0,i]
+        zero = 0
+        for value in column:
+            if value == "0":
+                zero += 1
+        zeros.append(name)
+        zeros.append(zero)
+    return(zeros)
+
 def get_av(data):
     count = len(data)
     total = 0
