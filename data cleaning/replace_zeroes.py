@@ -1,7 +1,7 @@
 import pandas as pd
 import numpy as np
 
-DATA = "cleaned_mobile_price.csv"
+DATA = "data/cleaned_mobile_price.csv"
 info = np.genfromtxt(DATA, dtype = "U", delimiter = ",")
 primary_camera = info[1:,11]
 pixel_height = info[1:,12]

@@ -14,9 +14,9 @@ else:
 
     categorical_columns = ["blue", "dual_sim", "four_g", "three_g", "touch_screen", "wifi", "price_category"]
 
-    # map 'has' and 1 to 'yes' and any other value to 'no'
-    replacements_dict = defaultdict(lambda: "no")
-    replacements_dict.update({"has": "yes", "1": "yes", "yes": "yes"})
+    # map 'has' and 1 to 'Yes' and any other value to 'No'
+    replacements_dict = defaultdict(lambda: "No")
+    replacements_dict.update({"has": "Yes", "1": "Yes", "yes": "Yes"})
 
     for column in categorical_columns:
         df[column] = df[column].str.lower()
