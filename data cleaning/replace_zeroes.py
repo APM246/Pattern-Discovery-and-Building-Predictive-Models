@@ -34,5 +34,5 @@ info[1:,11] = new_pc
 info[1:,12] = new_ph
 info[1:,16] = new_sw
 
-infopd = pd.DataFrame(info)
+infopd = pd.DataFrame(data=info[1:], columns=info[0, :])
 infopd.to_csv("data/cleaned_mobile_price(no 0s).csv", index = False)
