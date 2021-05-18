@@ -3,9 +3,9 @@ import numpy as np
 
 DATA = "data/cleaned_mobile_price.csv"
 info = np.genfromtxt(DATA, dtype = "U", delimiter = ",")
-primary_camera = info[1:,11]
-pixel_height = info[1:,12]
-screen_width = info[1:,16]
+primary_camera = info[1:,10]
+pixel_height = info[1:,11]
+screen_width = info[1:,15]
 
 def get_av(data):
     count = len(data)
@@ -30,9 +30,9 @@ new_pc = (replace_zero(primary_camera, av_pc))
 new_ph = (replace_zero(pixel_height, av_ph))
 new_sw = (replace_zero(screen_width, av_sw))
 
-info[1:,11] = new_pc
-info[1:,12] = new_ph
-info[1:,16] = new_sw
+info[1:,10] = new_pc
+info[1:,11] = new_ph
+info[1:,15] = new_sw
 
 infopd = pd.DataFrame(data=info[1:], columns=info[0, :])
 infopd.to_csv("data/cleaned_mobile_price(no 0s).csv", index = False)

@@ -22,4 +22,7 @@ else:
         df[column] = df[column].str.lower()
         df[column] = df[column].map(replacements_dict)
 
+    # drop id column
+    df = df.drop("id", axis=1)
+
     df.to_csv("data/cleaned_mobile_price.csv", index = False)
