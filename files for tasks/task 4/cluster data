@@ -1,0 +1,280 @@
+=== Run information ===
+
+Scheme:       weka.clusterers.MakeDensityBasedClusterer -M 1.0E-6 -W weka.clusterers.MakeDensityBasedClusterer -- -M 1.0E-6 -W weka.clusterers.SimpleKMeans -- -init 0 -max-candidates 100 -periodic-pruning 10000 -min-density 2.0 -t1 -1.25 -t2 -1.0 -N 2 -A "weka.core.EuclideanDistance -R first-last" -I 500 -num-slots 1 -S 10
+Relation:     cleaned_mobile_price2-weka.filters.unsupervised.attribute.Remove-R1-weka.filters.unsupervised.attribute.Discretize-B3-M-1.0-Rfirst-last-precision6
+Instances:    2000
+Attributes:   21
+              battery_power
+              blue
+              clock_speed
+              dual_sim
+              fc
+              four_g
+              int_memory
+              m_dep
+              mobile_wt
+              n_cores
+              pc
+              px_height
+              px_width
+              ram
+              sc_h
+              sc_w
+              talk_time
+              three_g
+              touch_screen
+              wifi
+Ignored:
+              price_category
+Test mode:    Classes to clusters evaluation on training data
+
+=== Clustering model (full training set) ===
+
+MakeDensityBasedClusterer: 
+
+Wrapped clusterer: MakeDensityBasedClusterer: 
+
+Wrapped clusterer: 
+kMeans
+======
+
+Number of iterations: 3
+Within cluster sum of squared errors: 19329.0
+
+Initial starting points (random):
+
+Cluster 0: Medium,Yes,Medium,Yes,Small,No,Medium,Small,Small,Large,Small,Small,Small,Medium,Large,Large,Large,No,Yes,No
+Cluster 1: Small,Yes,Small,Yes,Large,No,Small,Medium,Large,Large,Large,Small,Large,Large,Large,Small,Large,No,No,No
+
+Missing values globally replaced with mean/mode
+
+Final cluster centroids:
+                             Cluster#
+Attribute        Full Data          0          1
+                  (2000.0)   (1178.0)    (822.0)
+================================================
+battery_power        Small     Medium      Small
+blue                    No        Yes         No
+clock_speed          Small      Small      Small
+dual_sim               Yes        Yes        Yes
+fc                   Small      Small      Small
+four_g                 Yes        Yes        Yes
+int_memory           Small     Medium      Small
+m_dep                Small      Small     Medium
+mobile_wt            Small      Small      Large
+n_cores              Large      Large      Small
+pc                  Medium      Small      Large
+px_height            Small      Small      Small
+px_width            Medium      Small      Large
+ram                  Small     Medium      Large
+sc_h                 Large      Large      Small
+sc_w                 Small      Small      Small
+talk_time            Small      Small      Small
+three_g                Yes        Yes        Yes
+touch_screen           Yes        Yes         No
+wifi                   Yes         No        Yes
+
+
+
+Fitted estimators (with ML estimates of variance):
+
+Cluster: 0 Prior probability: 0.5889
+
+Attribute: battery_power
+Discrete Estimator. Counts =  333 472 376  (Total = 1181)
+Attribute: blue
+Discrete Estimator. Counts =  451 729  (Total = 1180)
+Attribute: clock_speed
+Discrete Estimator. Counts =  516 327 338  (Total = 1181)
+Attribute: dual_sim
+Discrete Estimator. Counts =  589 591  (Total = 1180)
+Attribute: fc
+Discrete Estimator. Counts =  913 215 53  (Total = 1181)
+Attribute: four_g
+Discrete Estimator. Counts =  563 617  (Total = 1180)
+Attribute: int_memory
+Discrete Estimator. Counts =  323 477 381  (Total = 1181)
+Attribute: m_dep
+Discrete Estimator. Counts =  642 256 283  (Total = 1181)
+Attribute: mobile_wt
+Discrete Estimator. Counts =  492 400 289  (Total = 1181)
+Attribute: n_cores
+Discrete Estimator. Counts =  335 318 528  (Total = 1181)
+Attribute: pc
+Discrete Estimator. Counts =  466 406 309  (Total = 1181)
+Attribute: px_height
+Discrete Estimator. Counts =  716 371 94  (Total = 1181)
+Attribute: px_width
+Discrete Estimator. Counts =  488 411 282  (Total = 1181)
+Attribute: ram
+Discrete Estimator. Counts =  409 485 287  (Total = 1181)
+Attribute: sc_h
+Discrete Estimator. Counts =  274 404 503  (Total = 1181)
+Attribute: sc_w
+Discrete Estimator. Counts =  668 397 116  (Total = 1181)
+Attribute: talk_time
+Discrete Estimator. Counts =  436 364 381  (Total = 1181)
+Attribute: three_g
+Discrete Estimator. Counts =  283 897  (Total = 1180)
+Attribute: touch_screen
+Discrete Estimator. Counts =  467 713  (Total = 1180)
+Attribute: wifi
+Discrete Estimator. Counts =  465 715  (Total = 1180)
+
+Cluster: 1 Prior probability: 0.4111
+
+Attribute: battery_power
+Discrete Estimator. Counts =  366 171 288  (Total = 825)
+Attribute: blue
+Discrete Estimator. Counts =  561 263  (Total = 824)
+Attribute: clock_speed
+Discrete Estimator. Counts =  389 218 218  (Total = 825)
+Attribute: dual_sim
+Discrete Estimator. Counts =  394 430  (Total = 824)
+Attribute: fc
+Discrete Estimator. Counts =  551 200 74  (Total = 825)
+Attribute: four_g
+Discrete Estimator. Counts =  396 428  (Total = 824)
+Attribute: int_memory
+Discrete Estimator. Counts =  390 176 259  (Total = 825)
+Attribute: m_dep
+Discrete Estimator. Counts =  260 337 228  (Total = 825)
+Attribute: mobile_wt
+Discrete Estimator. Counts =  188 266 371  (Total = 825)
+Attribute: n_cores
+Discrete Estimator. Counts =  402 204 219  (Total = 825)
+Attribute: pc
+Discrete Estimator. Counts =  182 292 351  (Total = 825)
+Attribute: px_height
+Discrete Estimator. Counts =  428 303 94  (Total = 825)
+Attribute: px_width
+Discrete Estimator. Counts =  170 280 375  (Total = 825)
+Attribute: ram
+Discrete Estimator. Counts =  275 187 363  (Total = 825)
+Attribute: sc_h
+Discrete Estimator. Counts =  331 280 214  (Total = 825)
+Attribute: sc_w
+Discrete Estimator. Counts =  552 218 55  (Total = 825)
+Attribute: talk_time
+Discrete Estimator. Counts =  314 246 265  (Total = 825)
+Attribute: three_g
+Discrete Estimator. Counts =  196 628  (Total = 824)
+Attribute: touch_screen
+Discrete Estimator. Counts =  529 295  (Total = 824)
+Attribute: wifi
+Discrete Estimator. Counts =  551 273  (Total = 824)
+
+Fitted estimators (with ML estimates of variance):
+
+Cluster: 0 Prior probability: 0.6324
+
+Attribute: battery_power
+Discrete Estimator. Counts =  379 497 392  (Total = 1268)
+Attribute: blue
+Discrete Estimator. Counts =  496 771  (Total = 1267)
+Attribute: clock_speed
+Discrete Estimator. Counts =  542 362 364  (Total = 1268)
+Attribute: dual_sim
+Discrete Estimator. Counts =  639 628  (Total = 1267)
+Attribute: fc
+Discrete Estimator. Counts =  1013 216 39  (Total = 1268)
+Attribute: four_g
+Discrete Estimator. Counts =  600 667  (Total = 1267)
+Attribute: int_memory
+Discrete Estimator. Counts =  365 497 406  (Total = 1268)
+Attribute: m_dep
+Discrete Estimator. Counts =  680 288 300  (Total = 1268)
+Attribute: mobile_wt
+Discrete Estimator. Counts =  509 440 319  (Total = 1268)
+Attribute: n_cores
+Discrete Estimator. Counts =  378 352 538  (Total = 1268)
+Attribute: pc
+Discrete Estimator. Counts =  502 435 331  (Total = 1268)
+Attribute: px_height
+Discrete Estimator. Counts =  796 384 88  (Total = 1268)
+Attribute: px_width
+Discrete Estimator. Counts =  525 448 295  (Total = 1268)
+Attribute: ram
+Discrete Estimator. Counts =  441 501 326  (Total = 1268)
+Attribute: sc_h
+Discrete Estimator. Counts =  284 450 534  (Total = 1268)
+Attribute: sc_w
+Discrete Estimator. Counts =  691 448 129  (Total = 1268)
+Attribute: talk_time
+Discrete Estimator. Counts =  461 401 406  (Total = 1268)
+Attribute: three_g
+Discrete Estimator. Counts =  300 967  (Total = 1267)
+Attribute: touch_screen
+Discrete Estimator. Counts =  530 737  (Total = 1267)
+Attribute: wifi
+Discrete Estimator. Counts =  525 742  (Total = 1267)
+
+Cluster: 1 Prior probability: 0.3676
+
+Attribute: battery_power
+Discrete Estimator. Counts =  320 146 272  (Total = 738)
+Attribute: blue
+Discrete Estimator. Counts =  516 221  (Total = 737)
+Attribute: clock_speed
+Discrete Estimator. Counts =  363 183 192  (Total = 738)
+Attribute: dual_sim
+Discrete Estimator. Counts =  344 393  (Total = 737)
+Attribute: fc
+Discrete Estimator. Counts =  451 199 88  (Total = 738)
+Attribute: four_g
+Discrete Estimator. Counts =  359 378  (Total = 737)
+Attribute: int_memory
+Discrete Estimator. Counts =  348 156 234  (Total = 738)
+Attribute: m_dep
+Discrete Estimator. Counts =  222 305 211  (Total = 738)
+Attribute: mobile_wt
+Discrete Estimator. Counts =  171 226 341  (Total = 738)
+Attribute: n_cores
+Discrete Estimator. Counts =  359 170 209  (Total = 738)
+Attribute: pc
+Discrete Estimator. Counts =  146 263 329  (Total = 738)
+Attribute: px_height
+Discrete Estimator. Counts =  348 290 100  (Total = 738)
+Attribute: px_width
+Discrete Estimator. Counts =  133 243 362  (Total = 738)
+Attribute: ram
+Discrete Estimator. Counts =  243 171 324  (Total = 738)
+Attribute: sc_h
+Discrete Estimator. Counts =  321 234 183  (Total = 738)
+Attribute: sc_w
+Discrete Estimator. Counts =  529 167 42  (Total = 738)
+Attribute: talk_time
+Discrete Estimator. Counts =  289 209 240  (Total = 738)
+Attribute: three_g
+Discrete Estimator. Counts =  179 558  (Total = 737)
+Attribute: touch_screen
+Discrete Estimator. Counts =  466 271  (Total = 737)
+Attribute: wifi
+Discrete Estimator. Counts =  491 246  (Total = 737)
+
+
+Time taken to build model (full training data) : 0.05 seconds
+
+=== Model and evaluation on training set ===
+
+Clustered Instances
+
+0      1355 ( 68%)
+1       645 ( 32%)
+
+
+Log likelihood: -18.53514
+
+
+Class attribute: price_category
+Classes to Clusters:
+
+    0    1  <-- assigned to cluster
+ 1071  429 | No
+  284  216 | Yes
+
+Cluster 0 <-- No
+Cluster 1 <-- Yes
+
+Incorrectly clustered instances :	713.0	 35.65   %
+
