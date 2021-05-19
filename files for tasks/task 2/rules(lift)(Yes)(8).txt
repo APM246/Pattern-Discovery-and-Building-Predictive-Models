@@ -1,0 +1,6 @@
+  1. ram='(3530.25-max)' 261 ==> price_category=Yes 245    conf:(0.94) < lift:(3.75)> lev:(0.09) [179] conv:(11.51)
+ 88. four_g=Yes 1043 ==> three_g=Yes price_category=Yes 275    conf:(0.26) < lift:(1.37)> lev:(0.04) [74] conv:(1.1)
+362. three_g=Yes 1523 ==> four_g=Yes price_category=Yes 275    conf:(0.18) < lift:(1.31)> lev:(0.03) [65] conv:(1.05)
+833. four_g=Yes 1043 ==> price_category=Yes 275    conf:(0.26) < lift:(1.05)> lev:(0.01) [14] conv:(1.02)
+834. four_g=Yes three_g=Yes 1043 ==> price_category=Yes 275    conf:(0.26) < lift:(1.05)> lev:(0.01) [14] conv:(1.02)
+965. blue=Yes 990 ==> price_category=Yes 259    conf:(0.26) < lift:(1.05)> lev:(0.01) [11] conv:(1.01)
