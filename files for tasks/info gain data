@@ -1,0 +1,64 @@
+=== Run information ===
+
+Evaluator:    weka.attributeSelection.InfoGainAttributeEval 
+Search:       weka.attributeSelection.Ranker -T -1.7976931348623157E308 -N -1
+Relation:     cleaned_mobile_price-weka.filters.unsupervised.attribute.Remove-R1-weka.filters.unsupervised.attribute.Discretize-B10-M-1.0-Rfirst-last-precision6
+Instances:    2000
+Attributes:   21
+              battery_power
+              blue
+              clock_speed
+              dual_sim
+              fc
+              four_g
+              int_memory
+              m_dep
+              mobile_wt
+              n_cores
+              pc
+              px_height
+              px_width
+              ram
+              sc_h
+              sc_w
+              talk_time
+              three_g
+              touch_screen
+              wifi
+              price_category
+Evaluation mode:    evaluate on all training data
+
+
+
+=== Attribute Selection on all input data ===
+
+Search Method:
+	Attribute ranking.
+
+Attribute Evaluator (supervised, Class (nominal): 21 price_category):
+	Information Gain Ranking Filter
+
+Ranked attributes:
+ 0.5206682   14 ram
+ 0.0301228    1 battery_power
+ 0.0191442   13 px_width
+ 0.0128599   12 px_height
+ 0.0086053   16 sc_w
+ 0.0081337    7 int_memory
+ 0.0057361   15 sc_h
+ 0.0055226    9 mobile_wt
+ 0.0031521    8 m_dep
+ 0.003072    11 pc
+ 0.0029213    3 clock_speed
+ 0.0029053    5 fc
+ 0.0018857   10 n_cores
+ 0.0008789   17 talk_time
+ 0.0007839    6 four_g
+ 0.0005089    2 blue
+ 0.0004046    4 dual_sim
+ 0.0002781   20 wifi
+ 0.0000962   18 three_g
+ 0.0000471   19 touch_screen
+
+Selected attributes: 14,1,13,12,16,7,15,9,8,11,3,5,10,17,6,2,4,20,18,19 : 20
+
