@@ -1,0 +1,165 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.functions.SMO -C 1.0 -L 0.001 -P 1.0E-12 -N 0 -V -1 -W 1 -K "weka.classifiers.functions.supportVector.PolyKernel -E 1.0 -C 250007" -calibrator "weka.classifiers.functions.Logistic -R 1.0E-8 -M -1 -num-decimal-places 4"
+Relation:     cleaned_mobile_price-weka.filters.unsupervised.attribute.Remove-R1-weka.filters.unsupervised.attribute.Remove-R2-6,10,17-20-weka.filters.unsupervised.attribute.Discretize-B10-M-1.0-Rfirst-last-precision6
+Instances:    2000
+Attributes:   11
+              battery_power
+              int_memory
+              m_dep
+              mobile_wt
+              pc
+              px_height
+              px_width
+              ram
+              sc_h
+              sc_w
+              price_category
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+SMO
+
+Kernel used:
+  Linear Kernel: K(x,y) = <x,y>
+
+Classifier for classes: No, Yes
+
+BinarySMO
+
+Machine linear: showing attribute weights, not support vectors.
+
+        -2.1662 * (normalized) battery_power='(-inf-650.7]'
+ +      -0.9318 * (normalized) battery_power='(650.7-800.4]'
+ +      -1.1015 * (normalized) battery_power='(800.4-950.1]'
+ +      -0.4994 * (normalized) battery_power='(950.1-1099.8]'
+ +      -0.447  * (normalized) battery_power='(1099.8-1249.5]'
+ +       0.3244 * (normalized) battery_power='(1249.5-1399.2]'
+ +       0.9392 * (normalized) battery_power='(1399.2-1548.9]'
+ +       0.9065 * (normalized) battery_power='(1548.9-1698.6]'
+ +       1.5082 * (normalized) battery_power='(1698.6-1848.3]'
+ +       1.4675 * (normalized) battery_power='(1848.3-inf)'
+ +      -0.3166 * (normalized) int_memory='(-inf-8.2]'
+ +      -0.2154 * (normalized) int_memory='(8.2-14.4]'
+ +      -0.6226 * (normalized) int_memory='(14.4-20.6]'
+ +       0.3224 * (normalized) int_memory='(20.6-26.8]'
+ +       0.2035 * (normalized) int_memory='(26.8-33]'
+ +       0.0079 * (normalized) int_memory='(33-39.2]'
+ +       0.477  * (normalized) int_memory='(39.2-45.4]'
+ +      -0.0172 * (normalized) int_memory='(45.4-51.6]'
+ +      -0.0831 * (normalized) int_memory='(51.6-57.8]'
+ +       0.2441 * (normalized) int_memory='(57.8-inf)'
+ +       0.0469 * (normalized) m_dep='(-inf-0.19]'
+ +      -0.1137 * (normalized) m_dep='(0.19-0.28]'
+ +      -0.2175 * (normalized) m_dep='(0.28-0.37]'
+ +      -0.0289 * (normalized) m_dep='(0.37-0.46]'
+ +       0.0202 * (normalized) m_dep='(0.46-0.55]'
+ +      -0.1101 * (normalized) m_dep='(0.55-0.64]'
+ +       0.1448 * (normalized) m_dep='(0.64-0.73]'
+ +      -0.0401 * (normalized) m_dep='(0.73-0.82]'
+ +       0.1226 * (normalized) m_dep='(0.82-0.91]'
+ +       0.1757 * (normalized) m_dep='(0.91-inf)'
+ +       0.6291 * (normalized) mobile_wt='(-inf-92]'
+ +       0.4151 * (normalized) mobile_wt='(92-104]'
+ +      -0.0737 * (normalized) mobile_wt='(104-116]'
+ +      -0.0036 * (normalized) mobile_wt='(116-128]'
+ +       0.0801 * (normalized) mobile_wt='(128-140]'
+ +      -0.1775 * (normalized) mobile_wt='(140-152]'
+ +      -0.1835 * (normalized) mobile_wt='(152-164]'
+ +      -0.1938 * (normalized) mobile_wt='(164-176]'
+ +      -0.2412 * (normalized) mobile_wt='(176-188]'
+ +      -0.251  * (normalized) mobile_wt='(188-inf)'
+ +      -0.0841 * (normalized) pc='(-inf-2]'
+ +       0.0085 * (normalized) pc='(2-4]'
+ +      -0.278  * (normalized) pc='(4-6]'
+ +       0.2605 * (normalized) pc='(6-8]'
+ +      -0.0575 * (normalized) pc='(8-10]'
+ +       0.0828 * (normalized) pc='(10-12]'
+ +       0.0451 * (normalized) pc='(12-14]'
+ +      -0.1778 * (normalized) pc='(14-16]'
+ +       0.026  * (normalized) pc='(16-18]'
+ +       0.1747 * (normalized) pc='(18-inf)'
+ +      -1.162  * (normalized) px_height='(-inf-196]'
+ +      -0.7896 * (normalized) px_height='(196-392]'
+ +      -0.6456 * (normalized) px_height='(392-588]'
+ +      -0.1417 * (normalized) px_height='(588-784]'
+ +       0.18   * (normalized) px_height='(784-980]'
+ +       0.4296 * (normalized) px_height='(980-1176]'
+ +       0.69   * (normalized) px_height='(1176-1372]'
+ +       0.4553 * (normalized) px_height='(1372-1568]'
+ +       0.3237 * (normalized) px_height='(1568-1764]'
+ +       0.6603 * (normalized) px_height='(1764-inf)'
+ +      -1.0668 * (normalized) px_width='(-inf-649.8]'
+ +      -0.9641 * (normalized) px_width='(649.8-799.6]'
+ +      -0.4462 * (normalized) px_width='(799.6-949.4]'
+ +      -0.5792 * (normalized) px_width='(949.4-1099.2]'
+ +       0.0375 * (normalized) px_width='(1099.2-1249]'
+ +       0.224  * (normalized) px_width='(1249-1398.8]'
+ +       0.2816 * (normalized) px_width='(1398.8-1548.6]'
+ +       0.72   * (normalized) px_width='(1548.6-1698.4]'
+ +       0.6912 * (normalized) px_width='(1698.4-1848.2]'
+ +       1.102  * (normalized) px_width='(1848.2-inf)'
+ +      -2.265  * (normalized) ram='(-inf-630.2]'
+ +      -1.9187 * (normalized) ram='(630.2-1004.4]'
+ +      -2.7049 * (normalized) ram='(1004.4-1378.6]'
+ +      -1.9914 * (normalized) ram='(1378.6-1752.8]'
+ +      -2.4629 * (normalized) ram='(1752.8-2127]'
+ +      -0.9156 * (normalized) ram='(2127-2501.2]'
+ +       0.4277 * (normalized) ram='(2501.2-2875.4]'
+ +       2.3479 * (normalized) ram='(2875.4-3249.6]'
+ +       4.0558 * (normalized) ram='(3249.6-3623.8]'
+ +       5.427  * (normalized) ram='(3623.8-inf)'
+ +      -0.1316 * (normalized) sc_h='(-inf-6.4]'
+ +      -0.2165 * (normalized) sc_h='(6.4-7.8]'
+ +      -0.5368 * (normalized) sc_h='(7.8-9.2]'
+ +      -0.0988 * (normalized) sc_h='(9.2-10.6]'
+ +      -0.0436 * (normalized) sc_h='(10.6-12]'
+ +       0.2732 * (normalized) sc_h='(12-13.4]'
+ +       0.0267 * (normalized) sc_h='(13.4-14.8]'
+ +       0.5255 * (normalized) sc_h='(14.8-16.2]'
+ +       0.1987 * (normalized) sc_h='(16.2-17.6]'
+ +       0.0032 * (normalized) sc_h='(17.6-inf)'
+ +       0.0575 * (normalized) sc_w='(-inf-1.8]'
+ +       0.2066 * (normalized) sc_w='(1.8-3.6]'
+ +      -0.2949 * (normalized) sc_w='(3.6-5.4]'
+ +      -0.412  * (normalized) sc_w='(5.4-7.2]'
+ +       0.1149 * (normalized) sc_w='(7.2-9]'
+ +      -0.3151 * (normalized) sc_w='(9-10.8]'
+ +       0.3599 * (normalized) sc_w='(10.8-12.6]'
+ +       0.0781 * (normalized) sc_w='(12.6-14.4]'
+ +      -0.0787 * (normalized) sc_w='(14.4-16.2]'
+ +       0.2837 * (normalized) sc_w='(16.2-inf)'
+ -       1.8415
+
+Number of kernel evaluations: 820820 (89.013% cached)
+
+
+
+Time taken to build model: 0.56 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances        1919               95.95   %
+Incorrectly Classified Instances        81                4.05   %
+Kappa statistic                          0.8911
+Mean absolute error                      0.0405
+Root mean squared error                  0.2012
+Relative absolute error                 10.796  %
+Root relative squared error             46.4758 %
+Total Number of Instances             2000     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.977    0.094    0.969      0.977    0.973      0.891    0.942     0.964     No
+                 0.906    0.023    0.930      0.906    0.918      0.891    0.942     0.866     Yes
+Weighted Avg.    0.960    0.076    0.959      0.960    0.959      0.891    0.942     0.940     
+
+=== Confusion Matrix ===
+
+    a    b   <-- classified as
+ 1466   34 |    a = No
+   47  453 |    b = Yes
+

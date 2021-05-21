@@ -1,0 +1,128 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.functions.SMO -C 1.0 -L 0.001 -P 1.0E-12 -N 0 -V -1 -W 1 -K "weka.classifiers.functions.supportVector.PolyKernel -E 1.0 -C 250007" -calibrator "weka.classifiers.functions.Logistic -R 1.0E-8 -M -1 -num-decimal-places 4"
+Relation:     cleaned_mobile_price-weka.filters.unsupervised.attribute.Remove-R1-weka.filters.unsupervised.attribute.Remove-R3-4,8-10,12,15-18-weka.filters.unsupervised.attribute.Discretize-B10-M-1.0-Rfirst-last-precision6
+Instances:    2000
+Attributes:   11
+              battery_power
+              blue
+              fc
+              four_g
+              int_memory
+              pc
+              px_width
+              ram
+              touch_screen
+              wifi
+              price_category
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+SMO
+
+Kernel used:
+  Linear Kernel: K(x,y) = <x,y>
+
+Classifier for classes: No, Yes
+
+BinarySMO
+
+Machine linear: showing attribute weights, not support vectors.
+
+        -2.0103 * (normalized) battery_power='(-inf-650.7]'
+ +      -0.8635 * (normalized) battery_power='(650.7-800.4]'
+ +      -0.7415 * (normalized) battery_power='(800.4-950.1]'
+ +      -0.5902 * (normalized) battery_power='(950.1-1099.8]'
+ +      -0.3869 * (normalized) battery_power='(1099.8-1249.5]'
+ +       0.2521 * (normalized) battery_power='(1249.5-1399.2]'
+ +       0.684  * (normalized) battery_power='(1399.2-1548.9]'
+ +       0.6674 * (normalized) battery_power='(1548.9-1698.6]'
+ +       1.4305 * (normalized) battery_power='(1698.6-1848.3]'
+ +       1.5584 * (normalized) battery_power='(1848.3-inf)'
+ +       0.1829 * (normalized) blue=Yes
+ +       0.1235 * (normalized) fc='(-inf-1.9]'
+ +      -0.0134 * (normalized) fc='(1.9-3.8]'
+ +      -0.015  * (normalized) fc='(3.8-5.7]'
+ +       0.1876 * (normalized) fc='(5.7-7.6]'
+ +       0.0296 * (normalized) fc='(7.6-9.5]'
+ +      -0.4267 * (normalized) fc='(9.5-11.4]'
+ +       0.4941 * (normalized) fc='(11.4-13.3]'
+ +      -0.2996 * (normalized) fc='(13.3-15.2]'
+ +      -0.0802 * (normalized) fc='(17.1-inf)'
+ +       0.2483 * (normalized) four_g=Yes
+ +      -0.3889 * (normalized) int_memory='(-inf-8.2]'
+ +      -0.1197 * (normalized) int_memory='(8.2-14.4]'
+ +      -0.4289 * (normalized) int_memory='(14.4-20.6]'
+ +       0.0373 * (normalized) int_memory='(20.6-26.8]'
+ +       0.1149 * (normalized) int_memory='(26.8-33]'
+ +       0.0076 * (normalized) int_memory='(33-39.2]'
+ +       0.4341 * (normalized) int_memory='(39.2-45.4]'
+ +       0.0302 * (normalized) int_memory='(45.4-51.6]'
+ +      -0.1032 * (normalized) int_memory='(51.6-57.8]'
+ +       0.4165 * (normalized) int_memory='(57.8-inf)'
+ +       0.0735 * (normalized) pc='(-inf-2]'
+ +       0.127  * (normalized) pc='(2-4]'
+ +      -0.0962 * (normalized) pc='(4-6]'
+ +       0.307  * (normalized) pc='(6-8]'
+ +      -0.4134 * (normalized) pc='(8-10]'
+ +       0.0305 * (normalized) pc='(10-12]'
+ +      -0.0381 * (normalized) pc='(12-14]'
+ +      -0.1219 * (normalized) pc='(14-16]'
+ +       0.0043 * (normalized) pc='(16-18]'
+ +       0.1273 * (normalized) pc='(18-inf)'
+ +      -1.331  * (normalized) px_width='(-inf-649.8]'
+ +      -1.3812 * (normalized) px_width='(649.8-799.6]'
+ +      -0.6408 * (normalized) px_width='(799.6-949.4]'
+ +      -0.6164 * (normalized) px_width='(949.4-1099.2]'
+ +      -0.0911 * (normalized) px_width='(1099.2-1249]'
+ +       0.4051 * (normalized) px_width='(1249-1398.8]'
+ +       0.5383 * (normalized) px_width='(1398.8-1548.6]'
+ +       0.8758 * (normalized) px_width='(1548.6-1698.4]'
+ +       1.0561 * (normalized) px_width='(1698.4-1848.2]'
+ +       1.1852 * (normalized) px_width='(1848.2-inf)'
+ +      -2.2093 * (normalized) ram='(-inf-630.2]'
+ +      -1.9378 * (normalized) ram='(630.2-1004.4]'
+ +      -2      * (normalized) ram='(1004.4-1378.6]'
+ +      -1.6545 * (normalized) ram='(1378.6-1752.8]'
+ +      -2      * (normalized) ram='(1752.8-2127]'
+ +      -0.9807 * (normalized) ram='(2127-2501.2]'
+ +       0.4833 * (normalized) ram='(2501.2-2875.4]'
+ +       2.0076 * (normalized) ram='(2875.4-3249.6]'
+ +       3.47   * (normalized) ram='(3249.6-3623.8]'
+ +       4.8215 * (normalized) ram='(3623.8-inf)'
+ +       0.0389 * (normalized) touch_screen=Yes
+ +       0.0067 * (normalized) wifi=No
+ -       2.1799
+
+Number of kernel evaluations: 858074 (82.72% cached)
+
+
+
+Time taken to build model: 0.37 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances        1901               95.05   %
+Incorrectly Classified Instances        99                4.95   %
+Kappa statistic                          0.8677
+Mean absolute error                      0.0495
+Root mean squared error                  0.2225
+Relative absolute error                 13.1951 %
+Root relative squared error             51.3809 %
+Total Number of Instances             2000     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.968    0.102    0.966      0.968    0.967      0.868    0.933     0.959     No
+                 0.898    0.032    0.903      0.898    0.901      0.868    0.933     0.837     Yes
+Weighted Avg.    0.951    0.085    0.950      0.951    0.950      0.868    0.933     0.929     
+
+=== Confusion Matrix ===
+
+    a    b   <-- classified as
+ 1452   48 |    a = No
+   51  449 |    b = Yes
+
